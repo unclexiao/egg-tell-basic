@@ -1,6 +1,6 @@
 {
   "name": "egg-tell-basic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "an egg framfork for tell",
   "dependencies": {
     "ali-oss": "^6.1.1",
@@ -38,14 +38,18 @@
   "ci": {
     "version": "8, 9"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
   "keywords": [
     "egg",
     "egg-framework"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unclexiao/egg-tell-basic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unclexiao/egg-tell-basic/issues"
+  },
+  "homepage": "https://github.com/unclexiao/egg-tell-basic",
   "author": "unclexiao <449129722@qq.com>>",
   "files": [
     "app",

@@ -1,26 +1,15 @@
-# tell-framwork
+# egg-tell-basic
+基于[EggJS](https://eggjs.org/zh-cn/)的企业内部框架
 
-tell us story
+## 技术选型
+- 文档型数据库：[MongoDB](https://www.mongodb.com/)
+- 高性能缓存：[Redis](https://redis.io/)
+- 对象云存储：[OSS](https://www.aliyun.com/product/oss/)
 
-## QuickStart
+## 问题与建议
 
-```bash
-$ npm install
-$ npm test
-```
+请在[这里](https://github.com/unclexiao/egg-tell-basic/issues)向我提出问题
 
-publish your framework to npm, then change app's dependencies:
+## 开源协议
 
-```js
-// {app_root}/index.js
-require('tell-framwork').startCluster({
-  baseDir: __dirname,
-  // port: 7001, // default to 7001
-});
-
-```
-
-## Questions & Suggestions
-
-Please open an issue [here](https://github.com/eggjs/egg/issues).
-
+[MIT](LICENSE)
