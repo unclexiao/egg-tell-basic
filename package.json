@@ -1,6 +1,6 @@
 {
   "name": "egg-tell-basic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "an egg framfork for tell",
   "dependencies": {
     "ali-oss": "^6.1.1",
@@ -52,10 +52,10 @@
   "homepage": "https://github.com/unclexiao/egg-tell-basic",
   "author": "unclexiao <449129722@qq.com>>",
   "files": [
-    "app",
-    "config",
+    "index.js",
     "lib",
-    "index.js"
+    "app",
+    "config"
   ],
   "eslintIgnore": [
     "coverage",

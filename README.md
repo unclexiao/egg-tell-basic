@@ -6,10 +6,50 @@
 - 高性能缓存：[Redis](https://redis.io/)
 - 对象云存储：[OSS](https://www.aliyun.com/product/oss/)
 
-## 问题与建议
+## 如何使用
+1. 安装模块
 
-请在[这里](https://github.com/unclexiao/egg-tell-basic/issues)向我提出问题
+```bash
+npm i egg-tell-basic
+```
 
-## 开源协议
+2. 引入框架
 
-[MIT](LICENSE)
+在 **package.json** 指定 **egg.framework**，默认为 **egg**
+
+```json
+{
+  "egg": {
+    "declarations": true,
+    "framework": "egg-tell-basic"
+  },
+  "dependencies": {
+    "egg": "^2.15.1",
+    "egg-scripts": "^2.11.0",
+    "egg-tell-basic": "^1.0.1"
+  },
+}
+```
+3. 添加配置
+
+指定[配置文件](https://eggjs.org/zh-cn/basics/config.html)覆盖数据库地址
+
+```javascript
+config.redis = {
+    client: {
+        host: process.env.EGG_REDIS_HOST || '127.0.0.1',
+        port: process.env.EGG_REDIS_PORT || 6379,
+        password: process.env.EGG_REDIS_PASSWORD || '',
+        db: process.env.EGG_REDIS_DB || '10',
+    },
+};
+
+config.mongoose = {
+    url: 'mongodb://localhost:27017/teller',
+    options: {
+        useNewUrlParser: true,
+        autoIndex: true,
+        useCreateIndex: true,
+    },
+};
+```

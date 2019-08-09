@@ -1,16 +1,7 @@
 'use strict';
 
-module.exports = appInfo => {
+module.exports = () => {
   const config = {};
-
-  /**
-   * 测试配置
-   * @member Config#test
-   * @property {String} key - 项目名
-   */
-  config.test = {
-    key: appInfo.name + '_123456',
-  };
 
   /**
    * 跨域设置
