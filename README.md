@@ -7,13 +7,13 @@
 - 对象云存储：[OSS](https://www.aliyun.com/product/oss/)
 
 ## 如何使用
-1. 安装模块
+### 安装模块
 
 ```bash
 npm i egg-tell-basic
 ```
 
-2. 引入框架
+### 引入框架
 
 在 **package.json** 指定 **egg.framework**，默认为 **egg**
 
@@ -30,7 +30,7 @@ npm i egg-tell-basic
   },
 }
 ```
-3. 添加配置
+### 添加配置
 
 指定[配置文件](https://eggjs.org/zh-cn/basics/config.html)覆盖数据库地址
 
