@@ -46,5 +46,29 @@ module.exports = () => {
     },
   };
 
+  /**
+  * 安全设置
+  * @member Config#security
+  * @property {String} domainWhiteList - 白名单列表
+  * @property {Object} csrf - 跨站请求伪造
+  */
+  config.security = {
+    domainWhiteList: [],
+    csrf: {
+      enable: false,
+    },
+  };
+
+  /**
+   * 性能监控
+   * @member Config#alinode
+   * @property {String} appid - 应用编号
+   * @property {Object} secret - 应用密钥
+   */
+  config.alinode = {
+    appid: '',
+    secret: '',
+  };
+
   return config;
 };

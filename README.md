@@ -4,9 +4,18 @@
 基于[EggJS](https://eggjs.org/zh-cn/)的企业内部框架
 
 ## 技术选型
+### 数据库
 - 文档型数据库：[MongoDB](https://www.mongodb.com/)
 - 高性能缓存：[Redis](https://redis.io/)
 - 对象云存储：[OSS](https://www.aliyun.com/product/oss/)
+
+### 插件
+- 表单验证插件：[egg-validate](https://github.com/eggjs/egg-validate)
+- 跨域设置插件：[egg-cors](https://github.com/eggjs/egg-cors)
+
+### 辅助
+- 性能监控平台：[alinode](https://cn.aliyun.com/product/nodejs)
+- 时间处理工具库：[momentjs](https://momentjs.com/)
 
 ## 如何使用
 ### 安装模块
@@ -28,7 +37,7 @@ npm i egg-tell-basic
   "dependencies": {
     "egg": "^2.15.1",
     "egg-scripts": "^2.11.0",
-    "egg-tell-basic": "^1.0.1"
+    "egg-tell-basic": "^1.0.5"
   },
 }
 ```
@@ -37,6 +46,17 @@ npm i egg-tell-basic
 指定[配置文件](https://eggjs.org/zh-cn/basics/config.html)覆盖数据库地址
 
 ```javascript
+// 文档型数据库
+config.mongoose = {
+    url: 'mongodb://localhost:27017/teller',
+    options: {
+        useNewUrlParser: true,
+        autoIndex: true,
+        useCreateIndex: true,
+    },
+};
+
+// 高性能缓存
 config.redis = {
     client: {
         host: process.env.EGG_REDIS_HOST || '127.0.0.1',
@@ -46,12 +66,26 @@ config.redis = {
     },
 };
 
-config.mongoose = {
-    url: 'mongodb://localhost:27017/teller',
-    options: {
-        useNewUrlParser: true,
-        autoIndex: true,
-        useCreateIndex: true,
+// 安全设置
+config.security = {
+    domainWhiteList: [],
+    csrf: {
+      enable: false,
     },
 };
+
+// 性能监控
+config.alinode = {
+    appid: '',
+    secret: '',
+};
 ```
+
+### 默认插件配置
+- [X] mongoose
+- [X] redis
+- [X] validate
+- [ ] cors
+- [ ] alinode
+
+
