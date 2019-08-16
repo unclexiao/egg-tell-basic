@@ -1,4 +1,6 @@
 # egg-tell-basic
+[![npm version](https://badge.fury.io/js/egg-tell-basic.svg)](https://badge.fury.io/js/egg-tell-basic)
+
 基于[EggJS](https://eggjs.org/zh-cn/)的企业内部框架
 
 ## 技术选型
