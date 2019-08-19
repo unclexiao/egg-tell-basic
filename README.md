@@ -12,6 +12,7 @@
 ### 插件
 - 表单验证插件：[egg-validate](https://github.com/eggjs/egg-validate)
 - 跨域设置插件：[egg-cors](https://github.com/eggjs/egg-cors)
+- 国际化插件：[egg-i18n](https://github.com/eggjs/egg-i18n)
 
 ### 辅助
 - 性能监控平台：[alinode](https://cn.aliyun.com/product/nodejs)
@@ -78,6 +79,11 @@ config.security = {
 config.alinode = {
     appid: '',
     secret: '',
+};
+
+// 国际化
+config.i18n = {
+    defaultLocale: 'zh-CN',
 };
 ```
 

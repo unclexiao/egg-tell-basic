@@ -63,11 +63,20 @@ module.exports = () => {
    * 性能监控
    * @member Config#alinode
    * @property {String} appid - 应用编号
-   * @property {Object} secret - 应用密钥
+   * @property {String} secret - 应用密钥
    */
   config.alinode = {
     appid: '',
     secret: '',
+  };
+
+  /**
+  * 国际化
+  * @member Config#i18n
+  * @property {String} defaultLocale - 默认语言
+  */
+  config.i18n = {
+    defaultLocale: 'zh-CN'
   };
 
   return config;

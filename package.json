@@ -1,6 +1,6 @@
 {
   "name": "egg-tell-basic",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "an egg framfork for tell",
   "dependencies": {
     "ali-oss": "^6.1.1",
