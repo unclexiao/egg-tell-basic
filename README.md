@@ -88,4 +88,8 @@ config.alinode = {
 - [ ] cors
 - [ ] alinode
 
-
+## 集成开发环境
+建议使用[VSCode](https://code.visualstudio.com/)，并添加如下扩展
+- [eggjs](https://marketplace.visualstudio.com/items?itemName=atian25.eggjs)，本地调试应用
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)，检测代码质量
+- [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)，美化大纲排版
